@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Optional for dropdowns, m
 import '../assets/css/style.css'; // Your custom styles
 import "../assets/css/responsive.css";
 import { useNavigate } from 'react-router-dom';
-
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 // import Logo from "../assets/images/logo.svg";
 import Logo from "../assets/logo.png"
 // import HeroImage from "../assets/images/hero_img.jpg";
@@ -37,6 +37,14 @@ import AboutSkills from '../assets/images/about_skill_img.png'
 
 export default function Home() {
     const navigate = useNavigate();
+    const [text] = useTypewriter({
+        words: ["Full Stack Developer", "MERN Stack Developer", "Web Developer"],
+        loop: true,
+        typeSpeed: 20,
+        deleteSpeed: 10,
+        delaySpeed: 2000,
+      });
+
     return (
         <>
             <section className="d2c_hero_wrapper">
@@ -45,7 +53,15 @@ export default function Home() {
                         <div className="col-lg-6 text-center text-lg-start order-1 order-lg-0 wow fadeInLeft">
                         <h6>Welcome to MyPortfolio</h6>
                     <h1>I am <span>Arman Ali</span></h1>
-                    <h5>React Developer</h5>
+                   <h2 className="text-4xl font-bold TextStyle">
+                    a <span>{text}</span>
+                        <Cursor
+                        className="spinneText"
+                            cursorBlinking="false"
+                            cursorStyle="|"
+                            cursorColor="#ff014f"
+                        />
+                    </h2>
                     <p className="pe-0 pe-xl-5">As a Software Developer with 2+ years of experience in frontend and backend technologies, I have a strong passion for building efficient and scalable systems. I am proficient in technologies like Node.js, React.js, Next.js, JavaScript, and Core Java, with a solid understanding of data structures and algorithms.</p>
                             <a onClick={() => navigate("/contact")}  className="btn">Hire Me</a>
                             <a onClick={() => navigate("/about")} className="btn secondary_btn">Learn More</a>

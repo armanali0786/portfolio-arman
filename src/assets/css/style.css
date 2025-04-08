@@ -7,8 +7,8 @@
     --primary_color: #27194C;
     --secondary_color: #EDEBF1;
     --accent_color: #674CAE;
-    --decent_color: #a151a8;
-    --adjecent_color: #4c2050;
+    --decent_color: #3d2779;
+    --adjecent_color: #27194C;
     --text_color: #1E182D;
     --default_color: #FFFFFF;
     --color_one: #4D5053;
@@ -279,6 +279,10 @@ h1 {
 }
 h1 span {
     color: var(--accent_color);
+}
+.TextStyle{
+    color: var(--primary_color);
+
 }
 .d2c_hero_wrapper h6 {
     position: relative;
