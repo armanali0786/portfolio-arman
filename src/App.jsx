@@ -55,7 +55,7 @@ function Navbar() {
 function App() {
   return (
     <>
-    <Router>
+    <Router basename="/portfolio-arman">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
