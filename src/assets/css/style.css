@@ -105,48 +105,46 @@ p {
 
 /* btn start */
 .btn {
-    color: var(--secondary_color);
-    font-size: 17px;
-    font-family: var(--primary_font);
-    font-weight: 600;
-    text-transform: capitalize;
-    padding: 10px 40px 9px;
-    border-radius: 4px;
-    border: 1px solid var(--primary_color);
-    background: var(--primary_color);
-    transition: 0.4s all ease;
-}
-.btn:hover {
-    color: var(--secondary_color);
-    background: var(--accent_color);
-    border: 1px solid var(--accent_color);
-    transition: 0.4s all ease;
+    color: var(--secondary_color) !important;
+    font-size: 17px !important;
+    font-family: var(--primary_font) !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    padding: 10px 40px 9px  !important;
+    border-radius: 4px !important;
+    border: 1px solid var(--primary_color) !important;
+    background: var(--primary_color) !important;
+    transition: 0.4s all ease !important;
 }
 .btn:active {
     color: var(--secondary_color) !important;
     background: var(--accent_color) !important;
     border: 1px solid var(--accent_color) !important;
-    transition: 0.4s all ease;
+    transition: 0.4s all ease !important;
 }
+
 .secondary_btn {
-    color: var(--secondary_color);
-    background: var(--accent_color);
-    border: 1px solid var(--accent_color);
-    transition: 0.4s all ease;
-    margin-left: 20px;
+    color: var(--secondary_color) !important;
+    background: var(--accent_color) !important;
+    border: 1px solid var(--accent_color) !important;
+    transition: 0.4s all ease !important;
+    margin-left: 20px !important;
 }
+
 .secondary_btn:hover {
-    color: var(--secondary_color);
-    background: var(--primary_color);
-    border: 1px solid var(--primary_color);
-    transition: 0.4s all ease;
+    color: var(--secondary_color) !important;
+    background: var(--primary_color) !important;
+    border: 1px solid var(--primary_color) !important;
+    transition: 0.4s all ease !important;
 }
+
 .secondary_btn:active {
     color: var(--secondary_color) !important;
     background: var(--primary_color) !important;
     border: 1px solid var(--primary_color) !important;
-    transition: 0.4s all ease;
+    transition: 0.4s all ease !important;
 }
+
 /* btn end */
 /* Global Style End */
 
